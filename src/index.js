@@ -1,9 +1,9 @@
 import './styles.css';
 import createHeader from './header';
 import createHome from './HomePage';
+import createMenu from './MenuPage';
 function updateScreen(){
-    const content = document.querySelector('#content');
-    content.appendChild(createHeader());
-    content.appendChild(createHome());
+    createHeader();
+    createMenu();
 }
 updateScreen();
