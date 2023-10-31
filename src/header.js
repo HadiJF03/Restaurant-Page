@@ -5,7 +5,8 @@ import createMenu from "./MenuPage";
 const createHeader = () =>{
     const header = document.createElement('div'); // div header
     const title = document.createElement('div'); // div  header text
-
+    const buttonContainer = document.createElement('div');
+    buttonContainer.classList.add('buttons');
     
 
     title.textContent = 'RoseWater';
@@ -24,12 +25,14 @@ const createHeader = () =>{
     homeButton.textContent = 'Home';
     menuButton.textContent = 'Menu';
     contactButton.textContent = 'Contact';
-    header.appendChild(homeButton);
-    header.appendChild(menuButton);
-    header.appendChild(contactButton);
+
+    buttonContainer.appendChild(homeButton);
+    buttonContainer.appendChild(menuButton);
+    buttonContainer.appendChild(contactButton);
+
+    header.appendChild(buttonContainer);
     
     const div = document.querySelector('#content')
-    div.innerHTML = " ";
     div.appendChild(header);
 }
 export default createHeader;
