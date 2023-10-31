@@ -20,6 +20,7 @@ const createHome = ()=>{
 
 
     container.classList.add('home-container');     // class = container.
+    container.classList.add('common-container');
     title.classList.add('title');             //class = title.
 
     imgDiv1.classList.add('home-image-container');  //class = image-container.

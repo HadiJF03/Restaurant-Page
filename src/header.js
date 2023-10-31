@@ -1,4 +1,6 @@
+import createContact from "./ContactPage";
 import createHome from "./HomePage";
+import createMenu from "./MenuPage";
 
 const createHeader = () =>{
     const header = document.createElement('div'); // div header
@@ -15,7 +17,9 @@ const createHeader = () =>{
     const contactButton = document.createElement('button');
     //
     homeButton.addEventListener('click', createHome);
-
+    menuButton.addEventListener('click', createMenu);
+    contactButton.addEventListener('click',createContact);
+  
     //
     homeButton.textContent = 'Home';
     menuButton.textContent = 'Menu';

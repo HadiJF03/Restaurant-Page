@@ -4,9 +4,18 @@
     color: white;
     font-family: 'Allura', cursive;
 }
+.common-container{
+    background-color:rgba(16, 14, 1, 0.623);
+    text-shadow: 1px 1px 2px rgb(64, 228, 23), 1px 1px 0px rgb(0, 0, 0);
+
+    height:600px;
+    width:600px;
+    margin: 10px auto;
+    padding: 20px;
+}
 .header{
     height:20vh;
-    text-shadow: 1px 1px 2px rgb(64, 228, 23);
+    text-shadow: 1px 1px 2px rgb(64, 228, 23), 1px 1px 0px rgb(0, 0, 0);
     text-align: center;
     font-size: 4rem;
 }
@@ -21,19 +30,11 @@
 }
 .home-container{
     font-size: 3rem;;
-    margin: 10px auto;
-    padding: 20px;
-    height:600px;
-    width:600px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap:5px;
-    background-color:rgba(0, 0, 0, 0.384);
-
-    text-shadow: 1px 1px 2px rgb(64, 228, 23);
 }
 .home-image-container{
     width: 30%;
@@ -58,16 +59,58 @@
     width: 10%;
 }
 
-
-.menu{
-    margin: 10px auto;
-    padding: 20px;
-    height:600px;
-    width:600px;
-    background-color:rgba(0, 0, 0, 0.384);
-}
 .menu-title{
-    text-shadow: 1px 1px 2px rgb(64, 228, 23);
     font-size: 4rem;
     text-align: center;
+}
+.menu-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+}
+.item-container{
+    
+    height: 30%;
+    width: 40%;
+}
+.dish{
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+    color: rgb(91, 215, 82);
+    font-size: 2rem;
+}
+.desc{
+    color: rgb(214, 147, 84);
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+.contact{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.info{
+    
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container{
+    text-align: center;
+}
+.container>div:nth-child(2n+1){
+    font-size: 2rem;
+    color: rgb(91, 215, 82);
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+    
+}
+.container>div:nth-child(2n){
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
 }
